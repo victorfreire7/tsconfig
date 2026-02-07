@@ -9,19 +9,16 @@ noReturn(1, 40, 2);
 // nada esta sendo retornado, apenas exibido.
 
 
-const person: {nome: string, sobrenome: string, exibirNome(): void} = {
+const person2: {nome: string, sobrenome: string, exibirNome(): void} = {
   nome: 'victor',
   sobrenome: 'hugo',
 
-  exibirNome(){
+  exibirNome(){ // <-- void
     console.log(this.nome + ' ' + this.sobrenome);
   }
 }
 
-person.exibirNome();
+person2.exibirNome();
 
 // --------------------------------
 
-export { person }
-// o typescript funciona como escopo global das variaveis.
-// caso eu nao expxorte esse objeto, ela vai conflitar com o arquivvo '001 types.ts' que possui um objeto com o memso nome.

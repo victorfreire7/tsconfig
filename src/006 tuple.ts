@@ -4,9 +4,11 @@
 
 const clientData: [number, string] = [1, 'Victor'];
 const clientData2: [number, string, string?] = [1, 'Victor']; // ? no final do type o torna nao obrigatorio
-const clientData3: [number, string, ...string[]] = [1, 'Victor']; // tambem aceita rest operator
+const clientData3: [number, string, ...string[]] = [1, 'Victor', 'Hugo', 'Freire']; // tambem aceita rest operator
 
 console.log(clientData);
+console.log(clientData2);
+console.log(clientData3);
 
 // Tuple aceitam os métodos pop() e push(), mesmo nao sendo recomendado
 

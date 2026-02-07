@@ -2,7 +2,7 @@
 // "falta de tipo.
 // caso um valor nao tenha o type explicito, ele se torna any.
 
-function show(msg:any) {
+function show(msg:any): any {
   return console.log(msg);
 }
 
