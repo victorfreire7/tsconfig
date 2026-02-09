@@ -29,7 +29,7 @@
   Não precisamos saber como um controle funciona para utiliza-lo, apenas suas funcionalidade explícitas
 
   ``` TypeScript
-  export clas RemoteControl {
+  export class RemoteControl {
     constructor(private powerStatus = false) {}
 
     public turnOn(): void {
